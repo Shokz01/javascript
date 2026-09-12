@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+</head>
+<body>
+    <h1>Você é Brasileiro?</h1>
+    Insira seu país <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="verify()">
+    <div id="res"></div>
+    <script>
+        var txtv = document.getElementById('txtp')
+        var res = document.getElementById('res')
+        
+        function verify() {
+            var txt = txtv.value
+            if (txt == 'Brasil') {
+                res.innerHTML = 'Você é Brasileiro'
+            } else {
+                res.innerHTML = 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
