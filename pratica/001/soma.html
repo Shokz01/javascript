@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Site de Matematica</h1>
+    
+    <div id="soma">
+        <input type="number" name="ms1" id="ms1"> +
+        <input type="number" name="ms2" id="ms2">
+        <input type="submit" value="Somar" onclick="somar()">
+        <div id="msresult"></div>
+    </div>
+    
+    <div id="subtracao">
+        <input type="number" name="sb1" id="sb1"> -
+        <input type="number" name="sb2" id="sb2">
+        <input type="submit" value="Subtrair" onclick="sub()">
+        <div id="sbresult"></div>
+    </div>
+
+
+
+    <script>
+        function somar() {
+            var num1 = document.getElementById('ms1')
+            var num2 = document.getElementById('ms2')
+            var res = window.document.getElementById('msresult')
+            var v1 = Number(num1.value)
+            var v2 = Number(num2.value)
+            var s = v1 + v2
+            res.innerText = s
+        }
+
+        function sub() {
+            var num1 = document.getElementById('sb1')
+            var num2 = document.getElementById('sb2')
+            var res = document.getElementById('sbresult')
+            var v1 = Number(num1.value)
+            var v2 = Number(num2.value)
+            var s = v1 - v2
+            res.innerText = s
+        }
+    </script>
+</body>
+</html>
