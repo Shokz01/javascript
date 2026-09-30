@@ -10,8 +10,6 @@ function contar(){
     var p = Number(passo.value)
 
     for(i;f;p) {
-        var num = i + p
-
-        alert(num)
+        alert(i)
     }
 }
