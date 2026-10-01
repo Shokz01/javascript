@@ -5,11 +5,13 @@ function contar(){
     var fim = document.getElementById('fim')
     var passo = document.getElementById('pas')
 
+    var res = document.getElementById('res')
+
     var i = Number(inicio.value)
     var f = Number(fim.value)
     var p = Number(passo.value)
 
-    for(i;f;p) {
-        alert(i)
+    for(i;i <= f;i+=p) {
+        res.innerHTML += i
     }
 }
